@@ -37,4 +37,4 @@ npm run build
 
 ## Contact
 
-The contact button currently uses `hello@nexcruz.com`. Confirm mailbox ownership and delivery before using it for customer inquiries.
+The contact button uses `thenexsupport@gmail.com`, the same support email as thenexcard.com.
