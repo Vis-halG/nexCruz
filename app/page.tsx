@@ -154,9 +154,11 @@ export default function Home() {
         <div className="h-full w-full max-w-full mx-auto px-2 sm:px-4 md:px-6 flex items-center justify-between">
           <a href="#" className="flex items-center">
             <img
-              src="/brand/redtech-logo-transparent.png"
-              alt="RedTech Logo"
-              className={`object-contain transition-all duration-300 ${scrolled ? 'h-8 md:h-12' : 'h-10 md:h-[60px]'
+              src="/brand/nexcruz-logo-transparent.png"
+              alt="nexCruz"
+              width={2172}
+              height={724}
+              className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-16 md:h-20' : 'h-20 md:h-28'
                 }`}
             />
           </a>
@@ -497,7 +499,7 @@ export default function Home() {
                 <span className="w-3 h-3 rounded-full bg-green-500"></span>
               </div>
               <div className="font-mono text-3xs tracking-widest text-zinc-400 font-bold uppercase">
-                REDTECH OS · DASHBOARD
+                <span className="normal-case">nexCruz</span> OS · DASHBOARD
               </div>
               <div className="w-12"></div>
             </div>
@@ -610,7 +612,7 @@ export default function Home() {
       <section id="contact" className="bg-zinc-950 py-24 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[25rem] font-black text-white select-none pointer-events-none">
-            RT
+            nC
           </div>
         </div>
 
@@ -629,10 +631,10 @@ export default function Home() {
 
           <div className="reveal-item opacity-0 translate-y-10 transition-all duration-1000 ease-out delay-150 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@redtech.com"
+              href="mailto:hello@nexcruz.com"
               className="odoo-arrow group inline-flex items-center justify-center bg-brand-red text-white text-sm font-bold uppercase tracking-wider px-10 py-5 hover:bg-white hover:text-zinc-900 transition-all rounded-sm"
             >
-              hello@redtech.com
+              hello@nexcruz.com
               <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -652,19 +654,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <a href="#" className="flex items-center">
             <img
-              src="/brand/redtech-logo-transparent.png"
-              alt="RedTech Logo"
-              className="h-[42px] object-contain opacity-80 hover:opacity-100 transition-opacity"
+              src="/brand/nexcruz-logo-transparent.png"
+              alt="nexCruz"
+              width={2172}
+              height={724}
+              className="h-20 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
             />
           </a>
           <div className="font-mono text-3xs text-zinc-500 uppercase tracking-widest">
-            © 2024 REDTECH · ALL RIGHTS RESERVED
+            © {new Date().getFullYear()} <span className="normal-case">nexCruz</span> · ALL RIGHTS RESERVED
           </div>
           <div className="flex gap-6">
             {["Twitter", "LinkedIn", "GitHub"].map((social) => (
               <a
                 key={social}
-                href="#"
+                href={social === "GitHub" ? "https://github.com/Vis-halG/nexCruz" : "#"}
                 className="text-zinc-500 hover:text-white text-xs transition-colors"
               >
                 {social}

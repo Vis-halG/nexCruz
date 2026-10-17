@@ -1,19 +1,37 @@
-# RedTech
+# nexCruz
 
-A Next.js and Tailwind CSS website for RedTech.
+A Next.js and Tailwind CSS website for nexCruz: practical websites, apps, and automation systems for growing businesses.
+
+The brand is always written **nexCruz**, with a lowercase `n` and uppercase `C`. Package and asset identifiers use lowercase `nexcruz`.
+
+- Repository: https://github.com/Vis-halG/nexCruz
+- Local folder: `TheNex/nexCruz`
+- Logo: [`public/brand/nexcruz-logo-transparent.png`](public/brand/nexcruz-logo-transparent.png)
+- Logo style and generation prompt: [BRANDING.md](BRANDING.md)
 
 ## Getting Started
 
 Install dependencies:
 
 ```bash
-npm.cmd install
+npm ci
 ```
 
 Run the development server:
 
 ```bash
-npm.cmd run dev
+npm run dev
 ```
 
 Open `http://localhost:3000` in your browser.
+
+## Validation
+
+```bash
+npm run typecheck
+npm run build
+```
+
+## Contact
+
+The contact button currently uses `hello@nexcruz.com`. Confirm mailbox ownership and delivery before using it for customer inquiries.
